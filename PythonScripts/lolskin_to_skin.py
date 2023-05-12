@@ -23,8 +23,8 @@ def forward_data(lolskin_hero_skin: dict):
 
     for key, value in lolskin_hero_skin.items():
         key = key.capitalize()
-        key = key + ".current_combo_skin_index"
-        value = int(value) + int(1)
+        key = f"{key}.current_combo_skin_index"
+        value = int(value) + 1
         dict_from_list[key] = value
 
     return dict_from_list
